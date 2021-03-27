@@ -1,0 +1,39 @@
+var readLineSync =require('readline-sync');
+ var score =0;
+var userName = readLineSync.question("May I know your name please? ");
+console.log("Welcome! " + userName + " Let's check how well  do you know Akshitha!\n" );
+console.log("Lets start then.....")
+function play(question,answer){
+  var userAnswer= readLineSync.question(question);
+  if(userAnswer.toUpperCase() ===answer.toUpperCase() ){
+    console.log("yay!You Are right!");
+    score= score+1;
+  }
+  else
+  {
+    console.log("oops! you are wrong");
+  }
+  console.log("current score:" ,score);
+  console.log(".................")
+}
+//array
+var questions= [{
+  question:"In which city does she study? " ,
+  answer: "hyderabad"
+},
+{
+  question:"What is  her age? " ,
+  answer: "19"
+},
+{
+  question: "what is her mothertongue? ",
+  answer: "Telugu"
+}
+];
+for (var i=0;i<questions.length;i++){
+  var currentQuestion = questions[i];
+  play(currentQuestion.question,currentQuestion.answer)
+}
+console.log(" wohhooo!!your final score:" ,score);
+console.log("I hope you enjoyed this game");
+console.log("see you next time!!")
