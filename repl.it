@@ -10,10 +10,34 @@ function play(question,answer){
     score= score+1;
   }
   else
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
 
-
-    
     console.log("oops! you are wrong");
   }
   console.log("current score:" ,score);
