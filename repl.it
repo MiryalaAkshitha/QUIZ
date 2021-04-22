@@ -11,6 +11,9 @@ function play(question,answer){
   }
   else
   {
+
+
+    
     console.log("oops! you are wrong");
   }
   console.log("current score:" ,score);
